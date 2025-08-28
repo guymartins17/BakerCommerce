@@ -103,6 +103,16 @@ namespace BakerCommerce.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Olho_Fechado {
+            get {
+                object obj = ResourceManager.GetObject("Olho_Fechado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TemaPadaria {
             get {
                 object obj = ResourceManager.GetObject("TemaPadaria", resourceCulture);

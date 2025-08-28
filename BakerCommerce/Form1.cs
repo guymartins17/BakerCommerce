@@ -36,6 +36,29 @@ namespace BakerCommerce
                 // Colocar os valores dos campos nos atributos do usuário:
                 usuario.Email = txbEmail.Text;
                 usuario.Senha = txbSenha.Text;
+
+                // Tabela que vai receber o resultado do SELECT (Logar)
+                DataTable resultado = usuario.Logar();
+
+                // Verificar se acertou o e-mail e senha:
+                if(resultado.Rows.Count == 0)
+                {
+                    MessageBox.Show("E-mail e/ou senha inválidos!", "Erro!",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                     // Armazenar as infos vindas do bd no objeto "usuario"
+                     usuario.Id = int.Parse(resultado.Rows[0]["id"].ToString());
+                     usuario.Id = int.Parse(resultado.Rows[0]["nome_completo"].ToString());
+
+                    // Mudar para o MenuPrincipal:
+                    MenuPrincipal menuPrincipal = new MenuPrincipal(usuario);
+                    Hide(); // Esconder a janela atual:
+                    menuPrincipal.ShowDialog(); // Mostrar o menu principal:
+
+                    Show(); // Mostrar a tela de login ao sair do menu principal:
+                }
             }
         }
     }
