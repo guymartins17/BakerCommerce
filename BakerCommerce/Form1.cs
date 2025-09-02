@@ -50,7 +50,7 @@ namespace BakerCommerce
                 {
                      // Armazenar as infos vindas do bd no objeto "usuario"
                      usuario.Id = int.Parse(resultado.Rows[0]["id"].ToString());
-                     usuario.Id = int.Parse(resultado.Rows[0]["nome_completo"].ToString());
+                     usuario.NomeCompleto = resultado.Rows[0]["nome_completo"].ToString();
 
                     // Mudar para o MenuPrincipal:
                     MenuPrincipal menuPrincipal = new MenuPrincipal(usuario);

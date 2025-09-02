@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
             this.txbEmail = new System.Windows.Forms.TextBox();
@@ -35,11 +36,11 @@
             this.btnEntrar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.grbLogin = new System.Windows.Forms.GroupBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pibOlhoAberto = new System.Windows.Forms.PictureBox();
+            this.pibLogin = new System.Windows.Forms.PictureBox();
             this.grbLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibOlhoAberto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // lblEmail
@@ -79,6 +80,7 @@
             // 
             // btnEntrar
             // 
+            this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.Location = new System.Drawing.Point(115, 184);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(253, 53);
@@ -91,19 +93,19 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Monotype Corsiva", 21.75F, System.Drawing.FontStyle.Italic);
             this.lblTitulo.ForeColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Location = new System.Drawing.Point(140, 25);
+            this.lblTitulo.Location = new System.Drawing.Point(108, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(205, 20);
+            this.lblTitulo.Size = new System.Drawing.Size(266, 36);
             this.lblTitulo.TabIndex = 5;
             this.lblTitulo.Text = "BakerCommerce :: Login";
             // 
             // grbLogin
             // 
             this.grbLogin.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.grbLogin.Controls.Add(this.pictureBox2);
-            this.grbLogin.Controls.Add(this.pictureBox1);
+            this.grbLogin.Controls.Add(this.pibOlhoAberto);
+            this.grbLogin.Controls.Add(this.pibLogin);
             this.grbLogin.Controls.Add(this.txbSenha);
             this.grbLogin.Controls.Add(this.lblSenha);
             this.grbLogin.Controls.Add(this.lblEmail);
@@ -115,25 +117,25 @@
             this.grbLogin.TabStop = false;
             this.grbLogin.Text = "Login";
             // 
-            // pictureBox2
+            // pibOlhoAberto
             // 
-            this.pictureBox2.Image = global::BakerCommerce.Properties.Resources.Olho;
-            this.pictureBox2.Location = new System.Drawing.Point(253, 84);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 17);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.pibOlhoAberto.Image = global::BakerCommerce.Properties.Resources.Olho;
+            this.pibOlhoAberto.Location = new System.Drawing.Point(253, 84);
+            this.pibOlhoAberto.Name = "pibOlhoAberto";
+            this.pibOlhoAberto.Size = new System.Drawing.Size(26, 17);
+            this.pibOlhoAberto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pibOlhoAberto.TabIndex = 5;
+            this.pibOlhoAberto.TabStop = false;
             // 
-            // pictureBox1
+            // pibLogin
             // 
-            this.pictureBox1.Image = global::BakerCommerce.Properties.Resources.login_avatar;
-            this.pictureBox1.Location = new System.Drawing.Point(110, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(72, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.pibLogin.Image = global::BakerCommerce.Properties.Resources.login_avatar;
+            this.pibLogin.Location = new System.Drawing.Point(110, 20);
+            this.pibLogin.Name = "pibLogin";
+            this.pibLogin.Size = new System.Drawing.Size(72, 33);
+            this.pibLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pibLogin.TabIndex = 4;
+            this.pibLogin.TabStop = false;
             // 
             // Form1
             // 
@@ -144,12 +146,16 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.grbLogin);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login";
             this.grbLogin.ResumeLayout(false);
             this.grbLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibOlhoAberto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,8 +170,8 @@
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.GroupBox grbLogin;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pibLogin;
+        private System.Windows.Forms.PictureBox pibOlhoAberto;
     }
 }
 

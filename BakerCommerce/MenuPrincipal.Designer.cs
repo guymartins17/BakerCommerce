@@ -115,6 +115,7 @@
             this.btnUsuarios.TabIndex = 5;
             this.btnUsuarios.Text = "Usuários";
             this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // pictureBox1
             // 
