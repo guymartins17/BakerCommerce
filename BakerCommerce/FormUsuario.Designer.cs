@@ -65,6 +65,7 @@
             this.dgvUsuarios.AllowUserToResizeColumns = false;
             this.dgvUsuarios.AllowUserToResizeRows = false;
             this.dgvUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvUsuarios.BackgroundColor = System.Drawing.Color.White;
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsuarios.Location = new System.Drawing.Point(74, 62);
             this.dgvUsuarios.Name = "dgvUsuarios";
@@ -93,9 +94,9 @@
             // btnCadastrar
             // 
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Location = new System.Drawing.Point(6, 114);
+            this.btnCadastrar.Location = new System.Drawing.Point(56, 122);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(243, 46);
+            this.btnCadastrar.Size = new System.Drawing.Size(135, 38);
             this.btnCadastrar.TabIndex = 6;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -170,9 +171,9 @@
             // btnEditar
             // 
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Location = new System.Drawing.Point(6, 114);
+            this.btnEditar.Location = new System.Drawing.Point(70, 122);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(243, 46);
+            this.btnEditar.Size = new System.Drawing.Size(135, 38);
             this.btnEditar.TabIndex = 6;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -245,9 +246,9 @@
             this.btnDescricaoApagar.FlatAppearance.BorderSize = 2;
             this.btnDescricaoApagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDescricaoApagar.ForeColor = System.Drawing.Color.IndianRed;
-            this.btnDescricaoApagar.Location = new System.Drawing.Point(403, 19);
+            this.btnDescricaoApagar.Location = new System.Drawing.Point(378, 19);
             this.btnDescricaoApagar.Name = "btnDescricaoApagar";
-            this.btnDescricaoApagar.Size = new System.Drawing.Size(98, 37);
+            this.btnDescricaoApagar.Size = new System.Drawing.Size(135, 38);
             this.btnDescricaoApagar.TabIndex = 1;
             this.btnDescricaoApagar.Text = "Apagar";
             this.btnDescricaoApagar.UseVisualStyleBackColor = true;
